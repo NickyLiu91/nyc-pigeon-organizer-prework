@@ -13,14 +13,13 @@ def nyc_pigeon_organizer(data)
 
   pigeon_hash = {}
 
-  data.keys.each do |attribute|
-    names_array.each do |name|
-      pigeon_hash[name] = {}
+  names_array.each do |name|
+    pigeon_hash[name] = {}
+    data.keys.each do |attribute|
       pigeon_hash[name][attribute] = []
     end
-    puts pigeon_hash
   end
-
+    puts pigeon_hash
 
   # names_array.uniq.each do |name|
   #   data.each do |attribute, hash|
