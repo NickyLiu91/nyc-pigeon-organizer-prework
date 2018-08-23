@@ -18,6 +18,7 @@ def nyc_pigeon_organizer(data)
       pigeon_hash[name] = {}
       pigeon_hash[name][attribute] = []
     end
+    puts pigeon_hash
   end
 
   puts pigeon_hash
