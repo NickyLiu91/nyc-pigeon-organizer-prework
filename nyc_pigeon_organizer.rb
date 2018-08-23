@@ -10,15 +10,15 @@ def nyc_pigeon_organizer(data)
   end
 
   array = []
-  hash = {}
+  pigeon_hash = {}
   names_array.uniq.each do |name|
     data.each do |attribute, hash|
       hash.each do |attribute_answer, name2|
         if name == name 2
-          hash[name] = {attribute => [attribute_answer]}
+          pigeon_hash[name] = {attribute => [attribute_answer]}
         end
       end
     end
   end
-
+  puts
 end
