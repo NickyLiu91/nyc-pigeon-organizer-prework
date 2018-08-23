@@ -15,7 +15,8 @@ def nyc_pigeon_organizer(data)
 
   pigeon_data.keys.each do |attribute|
     names_array.each do |name|
-      pigeon_hash[name] = {attribute => []}
+      pigeon_hash[name] = {}
+      pigeon_hash[name][attribute] = []
     end
   end
 
