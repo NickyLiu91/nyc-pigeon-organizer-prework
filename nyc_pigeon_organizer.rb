@@ -12,9 +12,7 @@ def nyc_pigeon_organizer(data)
   names_array.uniq!
   puts names_array
 
-  pigeon_data.keys.each do |attribute|
 
-  end
   # array = []
   # pigeon_hash = {}
   # names_array.uniq.each do |name|
