@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
   names_array.uniq.each do |name|
     data.each do |attribute, hash|
       hash.each do |attribute_answer, name2|
-        if name == name 2
+        if name == name2
           pigeon_hash[name] = {attribute => [attribute_answer]}
         end
       end
