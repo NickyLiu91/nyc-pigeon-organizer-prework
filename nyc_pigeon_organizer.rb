@@ -8,5 +8,5 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  put names_array
+  puts names_array
 end
