@@ -10,11 +10,17 @@ def nyc_pigeon_organizer(data)
   end
 
   names_array.uniq!
-  puts names_array
 
+  pigeon_hash = {}
 
-  # array = []
-  # pigeon_hash = {}
+  pigeon_data.keys.each do |attribute|
+    names_array.each do |name|
+      pigeon_hash[name] = {attribute => []}
+    end
+  end
+
+  puts pigeon_hash
+
   # names_array.uniq.each do |name|
   #   data.each do |attribute, hash|
   #     hash.each do |attribute_answer, name2|
@@ -24,5 +30,5 @@ def nyc_pigeon_organizer(data)
   #     end
   #   end
   # end
-
+  puts pigeon_hash
 end
